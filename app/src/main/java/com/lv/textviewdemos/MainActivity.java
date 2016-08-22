@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private MoneyTextView mTextMoneyTextView;
     private CountAnimationTextView mCountAnimationTextView;
     private TickerView mTickerView;
+    private CustomTextView mTestCustomTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,5 +47,7 @@ public class MainActivity extends AppCompatActivity {
         mTickerView.setAnimationDuration(500);
 
 
+        mTestCustomTextView = (CustomTextView) findViewById(R.id.test_CustomTextView);
+        mTestCustomTextView.setSelected(true);
     }
 }
