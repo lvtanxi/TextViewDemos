@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:context="com.lv.textviewdemos.MainActivity">
+
+        <com.hanks.htextview.HTextView
+            android:id="@+id/text_HTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:animateType="anvil"/>
+
+        <org.fabiomsr.moneytextview.MoneyTextView
+            android:id="@+id/text_MoneyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:amount="1256.56"
+            app:symbol="¥"/>
+
+        <com.daasuu.cat.CountAnimationTextView
+            android:id="@+id/count_animation_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            />
+
+        <com.lv.textviewdemos.JiaJianView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:maxNum="100"
+            app:minNum="0"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+        <com.lv.textviewdemos.CustomTextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="圆角TextView"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:textRadius="10dp"
+            app:textSolidColor="@color/colorPrimary"/>
+
+        <com.lv.textviewdemos.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="左上左下圆角TextView!"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:textLeftBottomRadius="10dp"
+            app:textLeftTopRadius="10dp"
+            app:textSolidColor="@color/colorPrimary"
+            />
+
+        <com.lv.textviewdemos.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="圆角TextView"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:textRadius="10dp"
+            app:textSolidColor="@color/colorPrimary"
+            app:textStrokeColor="@color/colorAccent"
+            app:textStrokeWidth="2dp"
+            />
+
+        <com.lv.textviewdemos.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:text="45弧度按下改变文字颜色TextView"
+            android:textSize="16sp"
+            app:textNormalTextColor="@color/colorAccent"
+            app:textRadius="45dp"
+            app:textSelectedTextColor="@android:color/white"
+            app:textSolidColor="@color/colorPrimary"
+            app:textStrokeWidth="2dp"
+            />
+
+        <com.lv.textviewdemos.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="12"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:textRadius="45dp"
+            app:textSolidColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+</ScrollView>
