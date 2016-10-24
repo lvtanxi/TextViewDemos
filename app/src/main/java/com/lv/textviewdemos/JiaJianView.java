@@ -19,7 +19,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 /**
- * @author 吕勇
  * @Title: JiaJianView.java
  * @Description: 自定义加减控件
  * @date 2016-1-28 下午6:58:20

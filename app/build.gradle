@@ -29,5 +29,8 @@ dependencies {
     compile 'org.fabiomsr:moneytextview:1.0.3'
     compile 'hanks.xyz:htextview-library:0.1.5'
     compile 'com.robinhood.ticker:ticker:1.1.0'
+
+    compile 'com.krsticdragan:autotypetextview:1.1'
+
     testCompile 'junit:junit:4.12'
 }

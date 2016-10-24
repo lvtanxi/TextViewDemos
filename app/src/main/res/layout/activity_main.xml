@@ -59,8 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:gravity="center"
             android:clickable="true"
+            android:gravity="center"
             android:text="圆角TextView"
             android:textColor="@android:color/white"
             android:textSize="16sp"
@@ -116,13 +116,17 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="12"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
+            android:text="12"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             app:textRadius="45dp"
             app:textSolidColor="@color/colorPrimary"/>
 
+        <com.dragankrstic.autotypetextview.AutoTypeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:animateTextTypeWithoutMistakes="Hello World!"/>
     </LinearLayout>
 </ScrollView>
